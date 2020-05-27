@@ -1,0 +1,15 @@
+{
+    "edit_format": "onofftextbox",
+    "edit_format_params": "onoff=enabled\nvalue=thread_ids\ntype=textbox\nplaceholder={{ phrase('SEOUtils_enter_thread_id') }}",
+    "data_type": "array",
+    "sub_options": [
+        "enabled",
+        "thread_ids"
+    ],
+    "validation_class": "",
+    "validation_method": "",
+    "default_value": "{\"enabled\":\"0\",\"thread_ids\":\"\"}",
+    "relations": {
+        "SEOUtils": 1
+    }
+}

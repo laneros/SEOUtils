@@ -1,0 +1,3 @@
+<p>The start date of each page in a thread will correspond to the first message of each page.</p>
+
+<p>If you want to enable this option on a specific thread please specify a thread id in the textbox.</p>
