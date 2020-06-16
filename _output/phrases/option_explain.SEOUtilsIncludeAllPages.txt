@@ -1,0 +1,3 @@
+By default XenForo only includes the first page of each thread in the sitemap.
+
+<p>When you turn on this option, the sitemap will include all the pages of each thread.</p>

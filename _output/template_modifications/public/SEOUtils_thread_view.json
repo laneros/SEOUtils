@@ -5,5 +5,5 @@
     "enabled": true,
     "action": "str_replace",
     "find": "<a href=\"{{ link('threads', $thread) }}\" class=\"u-concealed\"><xf:date time=\"{$thread.post_date}\" /></a>",
-    "replace": "<xf:if is=\"$xf.options.SEOUtils_thread_start_date_per_page.enabled && \n\t($xf.options.SEOUtils_thread_start_date_per_page.thread_ids is empty ||\n\t\t($xf.options.SEOUtils_thread_start_date_per_page.thread_ids is not empty && $xf.options.SEOUtils_thread_start_date_per_page.thread_ids == $thread.thread_id)\n\t)\">\n\t<a href=\"{{ link('threads', $thread, {'page': $page}) }}\" class=\"u-concealed\"><xf:date time=\"{$firstPost.post_date}\" /></a>\n<xf:else />\n\t$0\n</xf:if>"
+    "replace": "<xf:if is=\"$xf.options.SEOUtilsThreadStartDatePerPage.enabled && \n\t($xf.options.SEOUtilsThreadStartDatePerPage.thread_ids is empty ||\n\t\t($xf.options.SEOUtilsThreadStartDatePerPage.thread_ids is not empty && $xf.options.SEOUtilsThreadStartDatePerPage.thread_ids == $thread.thread_id)\n\t)\">\n\t<a href=\"{{ link('threads', $thread, {'page': $page}) }}\" class=\"u-concealed\"><xf:date time=\"{$firstPost.post_date}\" /></a>\n<xf:else />\n\t$0\n</xf:if>"
 }
