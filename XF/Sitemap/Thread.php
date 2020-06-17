@@ -14,7 +14,7 @@ class Thread extends XFCP_Thread
             return $result;
         }
 
-		$perPage = max(1, intval($this->app->options()->discussionsPerPage));
+		$perPage = max(1, intval($this->app->options()->messagesPerPage));
 		$total = max(0, intval($record->reply_count + 1));
 		$totalPages = ceil($total / $perPage);
         

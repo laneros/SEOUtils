@@ -1,1 +1,1 @@
-Include all pages in the Sitemap
+Include all pages of each thread in the Sitemap
