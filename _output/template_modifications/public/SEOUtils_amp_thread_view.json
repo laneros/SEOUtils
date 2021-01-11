@@ -1,0 +1,9 @@
+{
+    "template": "amp_thread_view",
+    "description": "",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:date time=\"{$thread.post_date}\" />",
+    "replace": "<xf:if is=\"$xf.options.SEOUtilsThreadStartDatePerPage.enabled && \n\t($xf.options.SEOUtilsThreadStartDatePerPage.thread_ids is empty ||\n\t\t($xf.options.SEOUtilsThreadStartDatePerPage.thread_ids is not empty && $xf.options.SEOUtilsThreadStartDatePerPage.thread_ids == $thread.thread_id)\n\t)\">\n\t<xf:date time=\"{$firstPost.post_date}\" />\n<xf:else />\n\t$0\n</xf:if>"
+}
